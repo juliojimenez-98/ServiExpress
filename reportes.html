@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ServiExpress</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <div class="sidebar-heading"><img src="img/Logos/logo blanco.png" class="img-fluid" alt=""> </div>
+                <div></div>
+                <a href="admin.html" class=" list-group-item text-white list-group-item-action bg-dark"></i><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="empleados.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-users"></i> Empleados</a>
+                <a href="clientes.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-users"></i> Cientes</a>
+                <a href="productos.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fab fa-product-hunt"></i> Productos</a>
+                <a href="servadmin.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-tools"></i> Servicios</a>
+                <a href="proveedores.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-people-carry"></i> Proveedores</a>
+                <a href="pedidos.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-truck-loading"></i> Pedidos</a>
+                <a href="reservas.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-calendar-week"></i> Reservas</a>
+                <a href="reportes.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-file"></i> Generar Reportes</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn bg-dark" id="menu-toggle"><i class="fas fa-bars text-white"></i></button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-user-alt"></i></span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Administrador
+              </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Ajustes</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="album py-3 bg-light">
+                <div class="container">
+
+                    <div class="row col-md-12 mx-auto">
+                        <div class="col-md-6">
+                            <div class="card text-white bg-dark mb-3">
+                                <div class="card-header"><i class="fas fa-money-bill-alt"></i> Reporte de ganancias</div>
+                                <div class="card-body">
+                                    <p class="card-text">Generar el reporte de las ganancias que se han efectuado durante el mes</p>
+                                    <button class="btn btn-success" style="margin-right: 10px;">Excel</button>
+                                    <button class="btn btn-primary">Word</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card text-white bg-dark mb-3">
+                                <div class="card-header"><i class="far fa-thumbs-down"></i> Reporte de perdidas</div>
+                                <div class="card-body">
+                                    <p class="card-text">Generar el reporte de las perdidas que se han efectuado durante el mes</p>
+                                    <button class="btn btn-success" style="margin-right: 10px;">Excel</button>
+                                    <button class="btn btn-primary">Word</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card text-white bg-dark mb-3">
+                                <div class="card-header"><i class="fas fa-tools itool"></i> Reporte de venta de servicios</div>
+                                <div class="card-body">
+                                    <p class="card-text">Generar el reporte de las ventas de servicios que se han realizado durante el mes</p>
+                                    <button class="btn btn-success" style="margin-right: 10px;">Excel</button>
+                                    <button class="btn btn-primary">Word</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card text-white bg-dark mb-3">
+                                <div class="card-header"><i class="fas fa-truck-loading ipedido"></i> Reporte de pedidos a proveedores</div>
+                                <div class="card-body">
+                                    <p class="card-text">Generar el reporte de los pedidos a proveedores que se han solicitado durante el mes</p>
+                                    <button class="btn btn-success" style="margin-right: 10px;">Excel</button>
+                                    <button class="btn btn-primary">Word</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>

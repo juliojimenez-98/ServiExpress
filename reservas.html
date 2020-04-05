@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ServiExpress</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <div class="sidebar-heading"><img src="img/Logos/logo blanco.png" class="img-fluid" alt=""> </div>
+                <div></div>
+                <a href="admin.html" class=" list-group-item text-white list-group-item-action bg-dark"></i><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="empleados.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-users"></i> Empleados</a>
+                <a href="clientes.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-users"></i> Cientes</a>
+                <a href="productos.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fab fa-product-hunt"></i> Productos</a>
+                <a href="servadmin.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-tools"></i> Servicios</a>
+                <a href="proveedores.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-people-carry"></i> Proveedores</a>
+                <a href="pedidos.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-truck-loading"></i> Pedidos</a>
+                <a href="reservas.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-calendar-week"></i> Reservas</a>
+                <a href="reportes.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-file"></i> Generar Reportes</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn bg-dark" id="menu-toggle"><i class="fas fa-bars text-white"></i></button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-user-alt"></i></span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Administrador
+              </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Ajustes</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row col-md-12 main-section">
+                <div class="col-md-12">
+                    <div class="main-card mb-3 bg-dark card">
+                        <div class="card-header text-white">Reservas
+                            <div class="btn-actions-pane-right">
+                                <div role="group" class="btn-group-sm btn-group">
+                                    <button class="active btn btn-focus">Esta Semana</button>
+                                    <button class="btn btn-focus">Todo el Mes</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="align-middle mb-0 table table-dark table-borderless table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">#</th>
+                                        <th>Name</th>
+                                        <th class="text-center">Servicio</th>
+                                        <th class="text-center">Fecha</th>
+                                        <th class="text-center">Hora</th>
+                                        <th class="text-center">Total</th>
+                                        <th class="text-center">Estado</th>
+                                        <th class="text-center">Factura o Boletas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center text-muted">#345</td>
+                                        <td>
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left flex2">
+                                                        <div class="widget-heading">John Doe</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">Cambio Aceite</td>
+                                        <td class="text-center">20/03/2020</td>
+                                        <td class="text-center">14:30</td>
+                                        <td class="text-center">$8.000</td>
+                                        <td class="text-center">
+                                            <div class="badge badge-warning">Pendiente</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <select class="custom-select my-1 mr-sm-1" id="inlineFormCustomSelectPref">
+                                                <option selected>Seleccionar</option>
+                                                <option value="1">Generar </option>
+                                                <option value="2">Modificar </option>
+                                                <option value="3">Borrar </option>
+                                              </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center text-muted">#347</td>
+                                        <td>
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                </div>
+                                                <div class="widget-content-left flex2">
+                                                    <div class="widget-heading">Ruben Tillman</div>
+                                                </div>
+                                            </div>
+                        </div>
+                        </td>
+                        <td class="text-center">Liquido Frenos</td>
+                        <td class="text-center">15/03/2020</td>
+                        <td class="text-center">17:45</td>
+                        <td class="text-center">$16.500</td>
+                        <td class="text-center">
+                            <div class="badge badge-success">Realizado</div>
+                        </td>
+                        <td class="text-center">
+                            <select class="custom-select my-1 mr-sm-1" id="inlineFormCustomSelectPref">
+                                <option selected>Seleccionar</option>
+                                <option value="1">Generar </option>
+                                <option value="2">Modificar </option>
+                                <option value="3">Borrar </option>
+                              </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center text-muted">#321</td>
+                            <td>
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                    </div>
+                                    <div class="widget-content-left flex2">
+                                        <div class="widget-heading">Elliot Huber</div>
+                                    </div>
+                                </div>
+                    </div>
+                    </td>
+                    <td class="text-center">Neumaticos</td>
+                    <td class="text-center">26/03/2020</td>
+                    <td class="text-center">17:45</td>
+                    <td class="text-center">$9.500</td>
+                    <td class="text-center">
+                        <div class="badge badge-danger">Cancelado</div>
+                    </td>
+                    <td class="text-center">
+                        <select class="custom-select my-1 mr-sm-1" id="inlineFormCustomSelectPref">
+                            <option selected>Seleccionar</option>
+                            <option value="1">Generar </option>
+                            <option value="2">Modificar </option>
+                            <option value="3">Borrar </option>
+                          </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center text-muted">#321</td>
+                        <td>
+                            <div class="widget-content p-0">
+                                <div class="widget-content-wrapper">
+                                    <div class="widget-content-left flex2">
+                                        <div class="widget-heading">Rosalía Rojas</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">Neumaticos</td>
+                        <td class="text-center">27/03/2020</td>
+                        <td class="text-center">10:45</td>
+                        <td class="text-center">$9.500</td>
+                        <td class="text-center">
+                            <div class="badge badge-info">Esperando Pago</div>
+                        </td>
+                        <td class="text-center">
+                            <select class="custom-select my-1 mr-sm-1" id="inlineFormCustomSelectPref">
+                                <option selected>Seleccionar</option>
+                                <option value="1">Generar </option>
+                                <option value="2">Modificar </option>
+                                <option value="3">Borrar </option>
+                              </select>
+                        </td>
+                    </tr>
+                    </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div>
+    </div>
+
+
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
