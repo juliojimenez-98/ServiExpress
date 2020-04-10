@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -68,52 +68,64 @@
                     </ul>
                 </div>
             </nav>
-            <div class="row col-md-12 main-section">
-                <div class="col-md-12">
-                    <div class="main-card mb-3 bg-dark card">
-                        <div class="card-header text-white text-xl-center text-capitalize">Gestion Servicios
+
+            <div class="modal-dialog modal-lg text-center ">
+                <div class="col-lg-12">
+                    <div class="modal-content">
+                        <div class="col-12">
+                            <h5 class="text-white">Pedir Productos</h5>
+                            <hr class="white">
                         </div>
-                        <div class="table-responsive">
-                            <table class="align-middle mb-0 table table-dark table-borderless table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Nombre Servicio</th>
-                                        <th>Descripcion</th>
-                                        <th>Valor</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center text-muted ">#345</td>
-                                        <td>Cambio Neumático</td>
-                                        <td>Cambio de neumáticos a vehiculos</td>
-                                        <td> 4000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center text-muted ">#346</td>
-                                        <td>Cambio Aceite</td>
-                                        <td>Cambio de aceite a vehiculos</td>
-                                        <td> 8000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center text-muted ">#347</td>
-                                        <td>Cambio Frenos</td>
-                                        <td>Cambio de Frenos a vehiculos</td>
-                                        <td> 15000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center text-muted ">#348</td>
-                                        <td>Cambio Aceite</td>
-                                        <td>Cambio de bujías</td>
-                                        <td> 16000</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-md-6 " id="dni-group">
+                                    <label>Empresa</label>
+                                    <select class="form-control form-group" id="">
+                                        <option>General Motors</option>
+                                        <option>Lorem, ipsum dolor.</option>
+                                        <option>Lorem ipsum dolor sit.</option>
+                                        <option>Lorem, ipsum.</option>
+                                        <option>Lorem.</option>
+                                      </select>
+                                </div>
+                                <div class="col-md-6 " id="dni-group">
+                                    <label>Productos</label>
+                                    <select class="form-control form-group" id="">
+                                        <option>Aceite Castrol</option>
+                                        <option>Lorem, ipsum dolor.</option>
+                                        <option>Lorem ipsum dolor sit.</option>
+                                        <option>Lorem, ipsum.</option>
+                                        <option>Lorem.</option>
+                                      </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-row ">
+                                <div class="col-md-6 " id="dni-group">
+                                    <label>Proveedor</label>
+                                    <select class="form-control form-group" id="">
+                                        <option>Williams Ramos</option>
+                                        <option>Lorem, ipsum dolor.</option>
+                                        <option>Lorem ipsum dolor sit.</option>
+                                        <option>Lorem, ipsum.</option>
+                                        <option>Lorem.</option>
+                                      </select>
+                                </div>
+                                <div class=" col-md-6">
+                                    <label>Cantidad</label>
+                                    <input class="form-control" type="number" placeholder="Cantidad">
+                                </div>
+                            </div>
+                            <br>
+
+                            <button type="submit " class="btn btn-success " style="margin-right: 10px; ">Pedir</button>
+
+                            <button type="submit " class="btn btn-danger ">Cancelar</button>
+                        </form>
                     </div>
                 </div>
-                <!-- /#page-content-wrapper -->
+            </div>
 
             </div>
 
