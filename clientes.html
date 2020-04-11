@@ -80,6 +80,14 @@
                     <div class="main-card mb-3 bg-dark card">
                         <div class="card-header text-white text-xl-center text-capitalize">Gestion clientes
                         </div>
+                        <div class="card-header text-white text-xl-center text-capitalize">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" placeholder="Buscar...">
+                                </div>
+                              <button type="submit" class="btn btn-outline-success"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
                         <div class="table-responsive">
                             <table class="align-middle mb-0 table table-dark table-borderless table-striped table-hover">
                                 <thead>
@@ -102,8 +110,9 @@
                                         <td>rosaliaester@correo.com</td>
                                         <td>13/07/1985</td>
                                         <td class="text-center ">
-                                            <button type="button " id="PopoverCustomT-1 " class="btn btn-success btn-sm ">Editar</button>
-                                            <button type="button " id="PopoverCustomT-1 " class="btn btn-danger btn-sm ">Borrar</button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalBlock">
+                                                Bloquear
+                                              </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -114,8 +123,9 @@
                                         <td>FelipePintoRocha@correo.com</td>
                                         <td>4/08/1972</td>
                                         <td class="text-center ">
-                                            <button type="button " id="PopoverCustomT-1 " class="btn btn-success btn-sm ">Editar</button>
-                                            <button type="button " id="PopoverCustomT-1 " class="btn btn-danger btn-sm ">Borrar</button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalBlock">
+                                                Bloquear
+                                              </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -126,17 +136,57 @@
                                         <td>josemarindelarosa@correo.com</td>
                                         <td>22/01/1971</td>
                                         <td class="text-center ">
-                                            <button type="button " id="PopoverCustomT-1 " class="btn btn-success btn-sm ">Editar</button>
-                                            <button type="button " id="PopoverCustomT-1 " class="btn btn-danger btn-sm ">Borrar</button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalBlock">
+                                                Bloquear
+                                              </button>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    
                 </div>
                 <!-- /#page-content-wrapper -->
-
+                <div class="modal fade" id="modalBlock" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Bloqueo Cliente <i class="fas fa-user-lock"></i></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ¿Está seguro que quiere bloquear a este cliente?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirm">
+                              Bloquear
+                            </button>
+                          <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Bloqueado <i class="fas fa-user-lock"></i></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          El cliente se ha bloqueado exitosamente
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success mx-auto" data-dismiss="modal">Aceptar</button>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
 

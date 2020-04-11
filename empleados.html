@@ -84,14 +84,6 @@
                         </div>
                         <form>
                             <div class="form-row">
-                                <div class="form-group col-md-6" id="dni-group">
-                                    <input type="text" class="form-control" placeholder="Nombre" name="username" />
-                                </div>
-                                <div class="form-group col-md-6" id="dni-group">
-                                    <input type="text" class="form-control" placeholder="Apellido" name="username" />
-                                </div>
-                            </div>
-                            <div class="form-row">
                                 <div class="form-group col-md-8 mx-auto " id="mail-group">
                                     <input type="text " class="form-control " placeholder="Correo " />
                                 </div>
@@ -100,8 +92,6 @@
                         </form>
                         <div>
                             <button onclick="empleadoreg();" type="submit " class="btn btn-success " style="margin-right: 20px;">Solicitar</button>
-
-                            <button type="submit " class="btn btn-danger ">Cancelar</button>
                         </div>
                     </div>
                 </div>
@@ -112,6 +102,14 @@
                     <div class="main-card mb-3 bg-dark card">
                         <div class="card-header text-white text-xl-center text-capitalize">Gestion Empleados
                         </div>
+                        <div class="card-header text-white text-xl-center text-capitalize">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" placeholder="Buscar...">
+                                </div>
+                              <button type="submit" class="btn btn-outline-success"><i class="fas fa-search"></i></button>
+                            </div>
+                    </div>
                         <div class="table-responsive">
                             <table class="align-middle mb-0 table table-dark table-borderless table-striped table-hover">
                                 <thead>
@@ -122,7 +120,6 @@
                                         <th>Telefono</th>
                                         <th>Correo</th>
                                         <th>Fecha Nacimiento</th>
-                                        <th>Sueldo</th>
                                         <th>Acciones</th>
                                     </tr>
                                 </thead>
@@ -131,20 +128,72 @@
                                         <td class="text-center text-muted ">15369741-K</td>
                                         <td>Juan Andrés</td>
                                         <td>Perez Garcés</td>
-                                        <td>41687806</td>
+                                        <td>41987806</td>
                                         <td>juangarces@correo.com</td>
                                         <td>13/07/1985</td>
-                                        <td>430.000</td>
                                         <td>
-                                            <button type="button " id="PopoverCustomT-1 " class="btn btn-success btn-sm ">Editar</button>
-                                            <button type="button " id="PopoverCustomT-1 " class="btn btn-danger btn-sm ">Borrar</button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalBlock">
+                                                Bloquear
+                                              </button>
                                         </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center text-muted ">19743741-K</td>
+                                        <td>Christian Luis</td>
+                                        <td>Rios Arenas</td>
+                                        <td>9689606</td>
+                                        <td>cluisra@correo.com</td>
+                                        <td>22/07/1998</td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalBlock">
+                                                Bloquear
+                                              </button>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="modalBlock" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Bloqueo Empleado <i class="fas fa-user-lock"></i></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ¿Está seguro que quiere bloquear a este empleado?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirm">
+                              Bloquear
+                            </button>
+                          <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Bloqueado <i class="fas fa-user-lock"></i></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          El empleado se ha bloqueado exitosamente
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success mx-auto" data-dismiss="modal">Aceptar</button>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 <!-- /#page-content-wrapper -->
 
             </div>
