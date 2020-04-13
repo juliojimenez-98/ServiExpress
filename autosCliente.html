@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ServiExpress</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/clienteLogueado.css">
+    <link rel="stylesheet" href="css/clogside.css">
+
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <div class="sidebar-heading"><img src="img/Logos/3bc207bc-25b4-45a0-a61a-019dd07742d2.jpg" class="img-fluid" alt=""> </div>
+                <div></div>
+                <a href="clientelog.html" class=" list-group-item text-dark list-group-item-action bg-light"></i><i class="fas fa-calendar-check"></i> Reservar</a>
+                <a href="historialReservaCliente.html" class="list-group-item text-dark list-group-item-action bg-light"><i class="fas fa-history"></i> Historial de reservas</a>
+                <a href="autosCliente.html" class="list-group-item text-dark list-group-item-action bg-light"><i class="fas fa-car"></i> Autos registrados</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+                <button class="btn bg-light" id="menu-toggle"><i class="fas fa-bars "></i></button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-user-alt"></i></span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cliente
+              </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="clienteDatosEdit.html">Actualizar Datos</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html">Cerrar Sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row col-md-12 main-section">
+                <div class="col-md-12">
+                    <div class="main-card mb-3 bg-light card">
+                        <div class="card-header text-black">Reservas
+                        </div>
+                        <div class="card-header text-white text-xl-center text-capitalize">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control bg-dark text-white" placeholder="Buscar...">
+                                </div>
+                              <button type="submit" class="btn btn-outline-success bg-dark "><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="align-middle mb-0 table table-light table-borderless table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Marca</th>
+                                        <th class="text-center">Modelo</th>
+                                        <th class="text-center">Tipo</th>
+                                        <th class="text-center">Año</th>
+                                        <th class="text-center">Patente</th>
+                                        <th class="text-center">Nro Chasís</th>
+                                        <th class="text-center">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">Nissan</td>
+                                        <td class="text-center">350Z</td>
+                                        <td class="text-center">Sedán</td>
+                                        <td class="text-center">2012</td>
+                                        <td class="text-center">CRDY96</td>
+                                        <td class="text-center">NF91GFAS2839FKSA</td>
+                                        <td class="text-center">
+                                            <button class="btn btn-danger btn-sm">Borrar</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">Audi</td>
+                                        <td class="text-center">TT</td>
+                                        <td class="text-center">Hatchback</td>
+                                        <td class="text-center">2017</td>
+                                        <td class="text-center">HPRF89</td>
+                                        <td class="text-center">FPRO5AS3212334DN</td>
+                                        <td class="text-center">
+                                            <button class="btn btn-danger btn-sm">Borrar</button>
+                                        </td>
+                                    </tr>
+                    </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js "></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+            <!-- Menu Toggle Script -->
+            <script>
+                $("#menu-toggle ").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper ").toggleClass("toggled ");
+                });
+                $('#myModal').on('shown.bs.modal', function () {
+                  $('#myInput').trigger('focus')
+                })
+            </script>
+
+</body>
+
+</html>
