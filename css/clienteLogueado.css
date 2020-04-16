@@ -1,10 +1,89 @@
+label {
+    color: aliceblue;
+}
+
+small {
+    color: aliceblue;
+}
+
+.main-section {
+    margin: 0 auto;
+    margin-top: 25%;
+    padding: 0;
+}
+
+.modal-content {
+    background-color: black;
+    padding: 20px;
+    opacity: .95;
+}
+
+.form-group#pass-group::before {
+    content: "\f13e";
+}
+
+.form-group#usuario-group::before {
+    content: "\f007";
+}
+
+.form-group#dni-group::before {
+    content: "\f2c2";
+}
+
+.form-group#celular-group::before {
+    content: "\f2b9";
+}
+
+.form-group#fnac-group::before {
+    content: "\f073";
+}
+
+.form-group#mail-group::before {
+    content: "\f0e0";
+}
+
+.form-group#sueldo-group::before {
+    content: "\f3d1";
+}
+
+.form-group input {
+    height: 42px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.form-group::before {
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top: 4px;
+}
+
+.button-sign {
+    width: 60%;
+    margin: 5px 0 25px;
+}
+
+.forgot {
+    padding: 5px 0;
+}
+
+.forgot a {
+    color: white;
+}
+
+#exampleModalCenter{
+    color: white;
+}
 /*!
  * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
 
-body {
+ body {
     overflow-x: hidden;
     background-color: white;
 }
@@ -66,12 +145,6 @@ small {
     padding: 0;
 }
 
-.modal-content {
-    background-color: black;
-    opacity: .95;
-    padding: 20px;
-    box-shadow: 0px 0px 3px #848484;
-}
 
 .form-group#pass-group::before {
     content: "\f13e";
@@ -126,25 +199,6 @@ small {
     padding: 5px 0;
 }
 
-.forgot a {
-    color: white;
-}
-
-.fa-money-bill-alt {
-    color: greenyellow;
-}
-
-.fa-thumbs-down {
-    color: red;
-}
-
-.itool {
-    color: lightseagreen;
-}
-
-.ipedido {
-    color: deeppink;
-}
-.bgboton{
-    background-color: #05a081;
+.iconfirm {
+    color: green;
 }

@@ -26,3 +26,12 @@ function empleadoreg(){
 
 function redireccionar() {
     setTimeout("location.href='register.html'", 0);}
+
+function ocultar(){
+    document.getElementById('mostrarOcultar').style.display="none";
+    document.getElementById('mostrarAuto').style.display="block";
+}
+function mostrar(){
+    document.getElementById('mostrarOcultar').style.display="block";
+    document.getElementById('mostrarAuto').style.display="none";
+}

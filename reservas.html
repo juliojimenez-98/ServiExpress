@@ -36,6 +36,7 @@
                 <a href="servadmin.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-tools"></i> Servicios</a>
                 <a href="proveedores.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-people-carry"></i> Proveedores</a>
                 <a href="pedidos.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-truck-loading"></i> Pedidos</a>
+                <a href="pedirProductos.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-truck"></i> Pedir productos</a>
                 <a href="reservas.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-calendar-week"></i> Reservas</a>
                 <a href="reportes.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-file"></i> Generar Reportes</a>
             </div>
@@ -65,7 +66,7 @@
                                 <a class="dropdown-item" href="#">Perfil</a>
                                 <a class="dropdown-item" href="#">Ajustes</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                                <a class="dropdown-item" href="login.html">Cerrar Sesión</a>
                             </div>
                         </li>
                     </ul>
@@ -86,19 +87,18 @@
                             <table class="align-middle mb-0 table table-dark table-borderless table-striped table-hover">
                                 <thead>
                                     <tr>
-                                        <th class="text-center">#</th>
+                                        <th class="text-center">ID</th>
                                         <th>Name</th>
                                         <th class="text-center">Servicio</th>
                                         <th class="text-center">Fecha</th>
                                         <th class="text-center">Hora</th>
                                         <th class="text-center">Total</th>
                                         <th class="text-center">Estado</th>
-                                        <th class="text-center">Factura o Boletas</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center text-muted">#345</td>
+                                        <td class="text-center text-muted">345</td>
                                         <td>
                                             <div class="widget-content p-0">
                                                 <div class="widget-content-wrapper">
@@ -115,17 +115,9 @@
                                         <td class="text-center">
                                             <div class="badge badge-warning">Pendiente</div>
                                         </td>
-                                        <td class="text-center">
-                                            <select class="custom-select my-1 mr-sm-1" id="inlineFormCustomSelectPref">
-                                                <option selected>Seleccionar</option>
-                                                <option value="1">Generar </option>
-                                                <option value="2">Modificar </option>
-                                                <option value="3">Borrar </option>
-                                              </select>
-                                        </td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center text-muted">#347</td>
+                                        <td class="text-center text-muted">347</td>
                                         <td>
                                             <div class="widget-content p-0">
                                                 <div class="widget-content-wrapper">
@@ -143,17 +135,9 @@
                         <td class="text-center">
                             <div class="badge badge-success">Realizado</div>
                         </td>
-                        <td class="text-center">
-                            <select class="custom-select my-1 mr-sm-1" id="inlineFormCustomSelectPref">
-                                <option selected>Seleccionar</option>
-                                <option value="1">Generar </option>
-                                <option value="2">Modificar </option>
-                                <option value="3">Borrar </option>
-                              </select>
-                        </td>
                         </tr>
                         <tr>
-                            <td class="text-center text-muted">#321</td>
+                            <td class="text-center text-muted">321</td>
                             <td>
                                 <div class="widget-content p-0">
                                     <div class="widget-content-wrapper">
@@ -171,17 +155,9 @@
                     <td class="text-center">
                         <div class="badge badge-danger">Cancelado</div>
                     </td>
-                    <td class="text-center">
-                        <select class="custom-select my-1 mr-sm-1" id="inlineFormCustomSelectPref">
-                            <option selected>Seleccionar</option>
-                            <option value="1">Generar </option>
-                            <option value="2">Modificar </option>
-                            <option value="3">Borrar </option>
-                          </select>
-                    </td>
                     </tr>
                     <tr>
-                        <td class="text-center text-muted">#321</td>
+                        <td class="text-center text-muted">321</td>
                         <td>
                             <div class="widget-content p-0">
                                 <div class="widget-content-wrapper">
@@ -196,15 +172,7 @@
                         <td class="text-center">10:45</td>
                         <td class="text-center">$9.500</td>
                         <td class="text-center">
-                            <div class="badge badge-info">Esperando Pago</div>
-                        </td>
-                        <td class="text-center">
-                            <select class="custom-select my-1 mr-sm-1" id="inlineFormCustomSelectPref">
-                                <option selected>Seleccionar</option>
-                                <option value="1">Generar </option>
-                                <option value="2">Modificar </option>
-                                <option value="3">Borrar </option>
-                              </select>
+                            <div class="badge badge-success">Realizado</div>
                         </td>
                     </tr>
                     </tbody>

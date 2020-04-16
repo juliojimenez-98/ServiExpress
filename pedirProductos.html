@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ServiExpress</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <div class="sidebar-heading"><img src="img/Logos/logo blanco.png" class="img-fluid" alt=""> </div>
+                <div></div>
+                <a href="admin.html" class=" list-group-item text-white list-group-item-action bg-dark"></i><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="empleados.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-users"></i> Empleados</a>
+                <a href="clientes.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-users"></i> Cientes</a>
+                <a href="productos.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fab fa-product-hunt"></i> Productos</a>
+                <a href="servadmin.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-tools"></i> Servicios</a>
+                <a href="proveedores.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-people-carry"></i> Proveedores</a>
+                <a href="pedidos.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-truck-loading"></i> Pedidos</a>
+                <a href="pedirProductos.html" class="list-group-item text-white list-group-item-action bg-dark"> <i class="fas fa-truck"></i> Pedir productos</a>
+                <a href="reservas.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-calendar-week"></i> Reservas</a>
+                <a href="reportes.html" class="list-group-item text-white list-group-item-action bg-dark"><i class="fas fa-file"></i> Generar Reportes</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn bg-dark" id="menu-toggle"><i class="fas fa-bars text-white"></i></button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-user-alt"></i></span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Empleado
+              </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Ajustes</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html">Cerrar Sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="modal-dialog modal-lg text-center ">
+                <div class="col-lg-12">
+                    <div class="modal-content">
+                        <div class="col-12">
+                            <h5 class="text-white">Pedir Productos</h5>
+                            <hr class="white">
+                        </div>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-md-6 " id="dni-group">
+                                    <label>Empresa</label>
+                                    <select class="form-control form-group" id="">
+                                        <option>General Motors</option>
+                                        <option>Fiat</option>
+                                        <option>Chevrolet</option>
+                                        <option>bridgestone</option>
+                                        <option>Lorem.</option>
+                                      </select>
+                                </div>
+                                <div class="col-md-6 " id="dni-group">
+                                    <label>Productos</label>
+                                    <select class="form-control form-group" id="">
+                                        <option>Aceite</option>
+                                        <option>Tubos de escape</option>
+                                        <option>Bujias</option>
+                                        <option>Lorem, ipsum.</option>
+                                        <option>Lorem.</option>
+                                      </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-row ">
+                                <div class="col-md-6 " id="dni-group">
+                                    <label>Proveedor</label>
+                                    <select class="form-control form-group" id="">
+                                        <option>Williams Ramos</option>
+                                        <option>Lorem, ipsum dolor.</option>
+                                        <option>Lorem ipsum dolor sit.</option>
+                                        <option>Lorem, ipsum.</option>
+                                        <option>Lorem.</option>
+                                      </select>
+                                </div>
+                                <div class=" col-md-6">
+                                    <label>Cantidad</label>
+                                    <input class="form-control" type="number" placeholder="Cantidad">
+                                </div>
+                            </div>
+                            <br>
+
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                                Pedir
+                              </button>
+
+                            <button type="submit " class="btn btn-danger ">Cancelar</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Confirmar pedido</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ¿Está seguro que quiere realizar este pedido?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirm">
+                          Confirmar
+                        </button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Exito <i class="fas fa-check-circle iconfirm"></i></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        Ha solicitado el pedido con exito
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success mx-auto" data-dismiss="modal">Aceptar</button>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
