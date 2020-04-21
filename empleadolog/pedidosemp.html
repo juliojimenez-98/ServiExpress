@@ -160,6 +160,7 @@
                           <button type="button" class="btn btn-danger" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirm">
                             Cancelado
                           </button>
+                          
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Cancelar</button>
@@ -267,12 +268,25 @@
                           <button type="button" class="btn btn-success" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirmRecibo">
                               Buen estado
                             </button>
-                            <button type="button" class="btn btn-warning" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirmRecibo">
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDetalle">
                                 Con detalles
                               </button>
                               <button type="button" class="btn btn-danger" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirmRecibo">
                                 Dañado
                               </button>
+                              <div class="" id="modalDetalle" style="display: none; margin-top: 10px;">
+                                <form action="">
+                                  <div class="form-row">
+                                    <label class="text-info" for="exampleFormControlTextarea1">Observacion del detalle de recibo</label>
+                                    <div class="col-md-9 ">
+                                      <textarea class="form-control" id="textArea" rows="3"></textarea>
+                                    </div>
+                                    <div class=" col-md-3">
+                                      <button type="submit" class="btn btn-success" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirmRecibo">Confirmar</button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Cancelar</button>
@@ -308,6 +322,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>

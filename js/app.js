@@ -35,6 +35,9 @@ function mostrar(){
     document.getElementById('mostrarOcultar').style.display="block";
     document.getElementById('mostrarAuto').style.display="none";
 }
+function detalle(){
+  document.getElementById('observacionDetalle').style.display="block";
+}
 
 
 //BARRA PROGRESO
