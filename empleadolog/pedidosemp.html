@@ -102,12 +102,9 @@
                                         <td>Motor WPR-500</td>
                                         <td>3</td>
                                         <td>
-                                            <select class="custom-select my-1 mr-sm-1 badge-primary" id="inlineFormCustomSelectPref">
-                                                <option selected>Seleccionar</option>
-                                                <option value="1">Pendiente </option>
-                                                <option value="2">Recibido </option>
-                                                <option value="3">Cancelado </option>
-                                              </select>
+                                            <button type="button" class="btn bgboton text-white btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalBlock">
+                                                Seleccionar
+                                              </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -118,12 +115,9 @@
                                         <td>Ruedas ARO 30</td>
                                         <td>16</td>
                                         <td>
-                                            <select class="custom-select my-1 mr-sm-1 badge-primary" id="inlineFormCustomSelectPref">
-                                                <option selected>Seleccionar</option>
-                                                <option value="1">Pendiente </option>
-                                                <option value="2">Recibido </option>
-                                                <option value="3">Cancelado </option>
-                                              </select>
+                                            <button type="button" class="btn bgboton text-white btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalBlock">
+                                                Seleccionar
+                                              </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -134,12 +128,9 @@
                                         <td>Tubos de escape</td>
                                         <td>8</td>
                                         <td>
-                                            <select class="custom-select my-1 mr-sm-1 badge-primary" id="inlineFormCustomSelectPref">
-                                                <option selected>Seleccionar</option>
-                                                <option value="1">Pendiente </option>
-                                                <option value="2">Recibido </option>
-                                                <option value="3">Cancelado </option>
-                                              </select>
+                                            <button type="button" class="btn bgboton text-white btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalBlock">
+                                                Seleccionar
+                                              </button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -150,6 +141,53 @@
                 <!-- /#page-content-wrapper -->
 
             </div>
+            <div class="modal fade" id="modalBlock" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Estado del pedido <i class="fas fa-truck-loading"></i></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body mx-auto">
+                      <button type="button" class="btn btn-success" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirm">
+                          Recibido
+                        </button>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirm">
+                            Pendiente
+                          </button>
+                          <button type="button" class="btn btn-danger" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirm">
+                            Cancelado
+                          </button>
+                          
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Cancelar</button>
+                        </button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Estado Pedido <i class="fas fa-truck-loading"></i></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Cambiaste el estado del pedido
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success mx-auto" data-dismiss="modal">Aceptar</button>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <div class="row col-md-12 main-section">
                 <div class="col-md-12">
@@ -182,12 +220,9 @@
                                         <td>Motor HR-1110</td>
                                         <td>1</td>
                                         <td>
-                                            <select class="custom-select my-1 mr-sm-1 badge-success" id="inlineFormCustomSelectPref">
-                                                <option selected>Seleccionar</option>
-                                                <option value="1">Con Detalles </option>
-                                                <option value="2">Buen Estado </option>
-                                                <option value="3">Dañado </option>
-                                              </select>
+                                            <button type="button" class="btn bgboton text-white btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalRecibo">
+                                                Seleccionar
+                                              </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -197,12 +232,9 @@
                                         <td>Ruedas ARO 30</td>
                                         <td>16</td>
                                         <td>
-                                            <select class="custom-select my-1 mr-sm-1 badge-success" id="inlineFormCustomSelectPref">
-                                                <option selected>Seleccionar</option>
-                                                <option value="1">Con Detalles </option>
-                                                <option value="2">Buen Estado </option>
-                                                <option value="3">Dañado </option>
-                                              </select>
+                                            <button type="button" class="btn bgboton text-white btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalRecibo">
+                                                Seleccionar
+                                              </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -212,12 +244,9 @@
                                         <td>Bujías</td>
                                         <td>120</td>
                                         <td>
-                                            <select class="custom-select my-1 mr-sm-1 badge-success" id="inlineFormCustomSelectPref">
-                                                <option selected>Seleccionar</option>
-                                                <option value="1">Con Detalles </option>
-                                                <option value="2">Buen Estado </option>
-                                                <option value="3">Dañado </option>
-                                              </select>
+                                            <button type="button" class="btn bgboton text-white btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalRecibo">
+                                                Seleccionar
+                                              </button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -226,7 +255,65 @@
                     </div>
                 </div>
                 <!-- /#page-content-wrapper -->
-
+                <div class="modal fade" id="modalRecibo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Estado del recibo <i class="fas fa-truck-loading"></i></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body mx-auto">
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirmRecibo">
+                              Buen estado
+                            </button>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDetalle">
+                                Con detalles
+                              </button>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirmRecibo">
+                                Dañado
+                              </button>
+                              <div class="" id="modalDetalle" style="display: none; margin-top: 10px;">
+                                <form action="">
+                                  <div class="form-row">
+                                    <label class="text-info" for="exampleFormControlTextarea1">Observacion del detalle de recibo</label>
+                                    <div class="col-md-9 ">
+                                      <textarea class="form-control" id="textArea" rows="3"></textarea>
+                                    </div>
+                                    <div class=" col-md-3">
+                                      <button type="submit" class="btn btn-success" data-toggle="modal" data-dismiss="modal" data-target="#modalConfirmRecibo">Confirmar</button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Cancelar</button>
+                            </button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="modalConfirmRecibo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Estado del Recibo <i class="fas fa-truck-loading"></i></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Cambiaste el estado del recibo
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success mx-auto" data-dismiss="modal">Aceptar</button>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
 
@@ -235,6 +322,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
